@@ -2,12 +2,12 @@
 ### Docker (Recommended)
 
 ```shell
-docker pull yidadaa/chatgpt-next-web
+docker pull LightningK/LightningAI-chat
 
 docker run -d -p 3000:3000 \
    -e OPENAI_API_KEY=sk-xxxx \
    -e CODE=your-password \
-   yidadaa/chatgpt-next-web
+   LightningK/LightningAI-chat
 ```
 
 You can start service behind a proxy:
@@ -17,7 +17,7 @@ docker run -d -p 3000:3000 \
    -e OPENAI_API_KEY=sk-xxxx \
    -e CODE=your-password \
    -e PROXY_URL=http://localhost:7890 \
-   yidadaa/chatgpt-next-web
+   LightningK/LightningAI-chat
 ```
 
 If your proxy needs password, use:
@@ -29,5 +29,5 @@ If your proxy needs password, use:
 ### Shell
 
 ```shell
-bash <(curl -s https://raw.githubusercontent.com/Yidadaa/ChatGPT-Next-Web/main/scripts/setup.sh)
+bash <(curl -s https://raw.githubusercontent.com/LightningK/LightningAI-chat/main/scripts/setup.sh)
 ```
